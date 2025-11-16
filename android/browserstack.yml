@@ -10,7 +10,7 @@ percy: true
 percyCaptureMode: testcase
 debug: true
 networkLogs: true
-performance: report
+appProfiling: true
 accessibility: true
 accessibilityOptions:
     wcagVersion: wcag21aaa # Default: wcag21aa
