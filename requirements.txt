@@ -1,7 +1,7 @@
 jsonmerge
 multiprocess
 paver
-selenium==4.9.1
+selenium==4.10.0
 psutil
 
 # pytest + plugins compatible with Python 3.13
