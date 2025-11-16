@@ -1,11 +1,10 @@
-browserstack-local
 jsonmerge
 multiprocess
 paver
-selenium==4.6.0
+selenium==4.9.1
 psutil
 pytest==7.1
 pytest-variables
 pytest-selenium
 Appium-Python-Client
-browserstack-sdk
+browserstack-sdk==1.31.0
