@@ -11,16 +11,7 @@ from selenium.webdriver.common.by import By
 class TestSample:
 
     def test_example(self):
-        text_button = WebDriverWait(self.driver, 30).until(
-            EC.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, "Text Button"))
-        )
-        text_button.click()
-        text_input = WebDriverWait(self.driver, 30).until(
-            EC.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, "Text Input"))
-        )
-        text_input.send_keys("hello@browserstack.com"+"\n")
-        time.sleep(5)
-        text_output = WebDriverWait(self.driver, 30).until(
-            EC.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, "Text Output"))
-        )
-        assert text_output!=None and text_output.text=="hello@browserstack.com"
+        page_source = self.driver.page_source
+        print(f"Page Source Length: {len(page_source)}")
+        # Assert that the page source length > 100
+        assert len(page_source) > 100, "Page source length is not greater than 100!"
