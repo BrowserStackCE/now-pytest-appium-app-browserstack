@@ -1,17 +1,11 @@
-jsonmerge
-multiprocess
-paver
-selenium==4.10.0
-psutil
+Appium-Python-Client>=5.2.4
 
-# pytest + plugins compatible with Python 3.13
+# pytest + plugins
 pytest==9.0.1
-pytest-selenium>=4.0.0
 pytest-variables>=3.1.0
 pytest-html>=4.1.1
 pytest-metadata>=3.1.1
 pytest-xdist>=3.5.0
 
-# Appium & BrowserStack
-Appium-Python-Client>=4.0.0
+# BrowserStack SDK
 browserstack-sdk==1.31.0
