@@ -1,16 +1,19 @@
 import pytest
 from appium import webdriver
 from appium.options.ios import XCUITestOptions
+import os
 
 @pytest.fixture(scope='function')
 def setWebdriver(request):
     remoteURL = "https://hub.browserstack.com/wd/hub"
+    bstack_app = os.getenv("BROWSERSTACK_APP")
+    print("Using BROWSERSTACK_APP:", bstack_app)
     capabilities = {
         "platformName": "iOS",
         "deviceName": "iPhone 15",
         "platformVersion": "17",
         "automationName": "XCUITest",
-        "app": "bs://<app-id-from-browserstack>",
+        "app": bstack_app,
         "bstack:options": {
             "sessionName": request.node.name,
             "buildName": "iOS App Automation",
