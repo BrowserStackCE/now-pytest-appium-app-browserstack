@@ -4,3 +4,11 @@
 **/**/*.log
 **/log
 **/**/*pycache*
+.venv/
+*.pyc
+__pycache__/
+env/
+venv/
+*.log
+logs
+browserstack.err
