@@ -1,3 +1,4 @@
+grpcio==0.0.0
 Appium-Python-Client>=5.2.4
 
 # pytest + plugins
