@@ -11,9 +11,8 @@ def setWebdriver(request):
     capabilities = {
         "platformName": "iOS",
         "deviceName": "iPhone 15",
-        "platformVersion": "17",
         "automationName": "XCUITest",
-        "app": bstack_app,
+        "app": "\\" + bstack_app + "\\",
         "bstack:options": {
             "sessionName": request.node.name,
             "buildName": "iOS App Automation",

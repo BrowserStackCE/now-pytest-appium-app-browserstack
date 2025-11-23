@@ -13,9 +13,8 @@ def setWebdriver(request):
     capabilities = {
         "platformName": "Android",
         "deviceName": "Google Pixel 7",
-        "platformVersion": "14.0",
         "automationName": "UiAutomator2",
-        "app": bstack_app,
+        "app": "\\" + bstack_app + "\\",
         "bstack:options": {
             "sessionName": request.node.name,
             "buildName": "Pytest App Automate",
