@@ -10,7 +10,6 @@ def setWebdriver(request):
     print("Using BROWSERSTACK_APP:", bstack_app)
     capabilities = {
         "platformName": "iOS",
-        "deviceName": "iPhone 15",
         "automationName": "XCUITest",
         "app": "\\" + bstack_app + "\\",
         "bstack:options": {

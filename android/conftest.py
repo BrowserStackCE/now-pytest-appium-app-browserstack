@@ -12,7 +12,6 @@ def setWebdriver(request):
     print("Using BROWSERSTACK_APP:", bstack_app)
     capabilities = {
         "platformName": "Android",
-        "deviceName": "Google Pixel 7",
         "automationName": "UiAutomator2",
         "app": "\\" + bstack_app + "\\",
         "bstack:options": {
