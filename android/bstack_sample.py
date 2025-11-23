@@ -4,8 +4,8 @@ from selenium.webdriver.common.by import By
 @pytest.mark.usefixtures('setWebdriver')
 class TestSample:
 
-    def test_example(setWebdriver):
-        driver = setWebdriver
+    def test_example(self):
+        driver = self.driver
         # Example: open app or check activity
         print(driver.session_id)
         page_source = driver.page_source
