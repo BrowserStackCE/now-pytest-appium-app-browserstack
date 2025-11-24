@@ -1,5 +1,5 @@
-grpcio < 1.52
-grpcio-status < 1.52
+grpcio==1.70.0
+grpcio-status==1.62.3
 
 Appium-Python-Client>=5.2.4
 # pytest + plugins
