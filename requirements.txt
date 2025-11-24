@@ -1,5 +1,7 @@
-Appium-Python-Client>=5.2.4
+grpcio==1.64.1
+grpcio-status==1.64.1
 
+Appium-Python-Client>=5.2.4
 # pytest + plugins
 pytest==9.0.1
 
